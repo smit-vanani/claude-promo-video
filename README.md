@@ -40,14 +40,14 @@ storyboard, then designs, renders, verifies, and delivers the video — 16:9,
 **Claude Code (recommended):**
 
 ```
-/plugin marketplace add smitvanani/claude-promo-video
+/plugin marketplace add smit-vanani/claude-promo-video
 /plugin install promo-video@claude-promo-video
 ```
 
 **Manual (any setup with a skills directory):**
 
 ```bash
-git clone https://github.com/smitvanani/claude-promo-video
+git clone https://github.com/smit-vanani/claude-promo-video
 cp -r claude-promo-video/skills/promo-video ~/.claude/skills/
 ```
 
