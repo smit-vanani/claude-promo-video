@@ -48,11 +48,14 @@ Two exceptions:
    clone.)
 
 **STUDIO HOME: `~/promo-video-studio` — everything happens there, regardless
-of the current working directory.** If it doesn't exist, bootstrap it:
-`npx create-video@latest ~/promo-video-studio` (pick the blank/Hello World
-template, TypeScript), then copy the `scripts/` folder from THIS SKILL's base
-directory (beatmap.mjs, frames.sh) into `~/promo-video-studio/scripts/`.
-When done, always copy the final MP4 to the user's working directory too.
+of the current working directory.** If it doesn't exist, bootstrap it by
+running this skill's setup script (auto-installs ffmpeg/Node, scaffolds the
+Remotion studio, copies the helper scripts in):
+`bash <skill-dir>/scripts/setup.sh`. If that's unavailable, do it manually:
+`npx create-video@latest ~/promo-video-studio` (blank template, TypeScript),
+then copy this skill's `scripts/` (beatmap.mjs, frames.sh) into
+`~/promo-video-studio/scripts/`. When done, always copy the final MP4 to the
+user's working directory too.
 
 ## Step 0 — Intake (ALWAYS run this first)
 

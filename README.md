@@ -9,6 +9,12 @@ product** (no template re-skins, ever).
 /promo-video https://your-product.com
 ```
 
+<p align="center">
+  <img src="assets/demo.gif" alt="promo-video demo — a 33s beat-locked product promo generated from a website URL" width="760">
+  <br>
+  <em>A full 33-second cut generated end-to-end from a URL — original template, beat-locked to the music, delivered in 16:9 + 9:16 + thumbnails.</em>
+</p>
+
 Claude researches your site, asks a handful of concrete questions, shows you a
 storyboard, then designs, renders, verifies, and delivers the video — 16:9,
 9:16 vertical, and YouTube thumbnails.
@@ -51,15 +57,23 @@ git clone https://github.com/smit-vanani/claude-promo-video
 cp -r claude-promo-video/skills/promo-video ~/.claude/skills/
 ```
 
-**One-time studio bootstrap** (Claude does this automatically on first run,
-or do it yourself):
+**One-time studio bootstrap** — zero-config, auto-installs ffmpeg + Node and
+scaffolds the Remotion studio (Claude also runs this automatically on first
+use):
+
+```bash
+bash ~/.claude/skills/promo-video/scripts/setup.sh
+```
+
+Or do it by hand:
 
 ```bash
 npx create-video@latest ~/promo-video-studio    # blank template, TypeScript
 cp -r ~/.claude/skills/promo-video/scripts ~/promo-video-studio/scripts
 ```
 
-Requirements: Node 18+, ffmpeg.
+Requirements (the setup script installs these for you on macOS/Linux/Windows
+via brew/apt/dnf/pacman/choco): Node 18+, ffmpeg.
 
 ## Use
 
@@ -80,9 +94,11 @@ drop about ¾ in) and beatmaps whatever comes back.
 
 ```
 skills/promo-video/SKILL.md            the skill — every rule and lesson
+skills/promo-video/scripts/setup.sh    zero-config installer + studio bootstrap
 skills/promo-video/scripts/beatmap.mjs onset detection → scene grid + hit placement
 skills/promo-video/scripts/frames.sh   exact-frame still extraction for verification
 .claude-plugin/                        Claude Code plugin + marketplace manifests
+assets/demo.gif                        the demo above
 ```
 
 ## License
