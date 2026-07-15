@@ -10,9 +10,15 @@ product** (no template re-skins, ever).
 ```
 
 <p align="center">
-  <img src="assets/demo.gif" alt="promo-video demo — a 33s beat-locked product promo generated from a website URL" width="760">
-  <br>
-  <em>A full 33-second cut generated end-to-end from a URL — original template, beat-locked to the music, delivered in 16:9 + 9:16 + thumbnails.</em>
+  <video src="https://github.com/smit-vanani/claude-promo-video/raw/master/assets/demo.mp4" poster="assets/poster.jpg" width="760" controls muted loop playsinline></video>
+</p>
+
+<p align="center">
+  <a href="https://github.com/smit-vanani/claude-promo-video/raw/master/assets/demo.mp4">▶︎ Watch the demo</a> — a full 33-second cut generated end-to-end from a URL: original template, beat-locked to the music, delivered in 16:9 + 9:16 + thumbnails.
+</p>
+
+<p align="center">
+  <img src="assets/poster.jpg" alt="promo-video demo still — 'Turn links into growth', a beat-locked product promo generated from a website URL" width="760">
 </p>
 
 Claude researches your site, asks a handful of concrete questions, shows you a
@@ -98,7 +104,7 @@ skills/promo-video/scripts/setup.sh    zero-config installer + studio bootstrap
 skills/promo-video/scripts/beatmap.mjs onset detection → scene grid + hit placement
 skills/promo-video/scripts/frames.sh   exact-frame still extraction for verification
 .claude-plugin/                        Claude Code plugin + marketplace manifests
-assets/demo.gif                        the demo above
+assets/demo.mp4                        the demo above (full-quality 1080p)
 ```
 
 ## License
