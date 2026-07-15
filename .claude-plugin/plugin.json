@@ -1,0 +1,12 @@
+{
+  "name": "promo-video",
+  "description": "Turn a website URL into a premium, beat-locked product promo video with Remotion — original design system every time, music-onset-locked scene grid, self-verifying renders, 16:9 + 9:16 + thumbnails.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Smit Vanani"
+  },
+  "homepage": "https://github.com/smitvanani/claude-promo-video",
+  "repository": "https://github.com/smitvanani/claude-promo-video",
+  "license": "MIT",
+  "keywords": ["video", "remotion", "promo", "marketing", "motion-graphics", "launch-video"]
+}

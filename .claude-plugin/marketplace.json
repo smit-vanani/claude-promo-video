@@ -1,0 +1,14 @@
+{
+  "name": "claude-promo-video",
+  "owner": {
+    "name": "Smit Vanani",
+    "url": "https://github.com/smitvanani"
+  },
+  "plugins": [
+    {
+      "name": "promo-video",
+      "source": "./",
+      "description": "Website URL + a few answers → finished premium promo video. Researches your site, designs an ORIGINAL template themed to your product, beat-locks every scene to your music track, verifies its own renders, and delivers 16:9 + 9:16 + thumbnails."
+    }
+  ]
+}
